@@ -12,3 +12,4 @@ $mystring = "Hp 4740s";
 $myarray = ["one", "two", "three"];
 $username = "Vlad";
 echo "<br/>$username";
+$current_user = $username;
