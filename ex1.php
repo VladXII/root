@@ -34,7 +34,7 @@ print $el;
 $k = 1;
 echo "<br/>";
 echo $k .= 4;
-for($m = 0; $m <= 10; ++$m) {
-    $res = $m%3;
+for($m = 1; !($m == 20) ; ++$m) {
+    $res = $m;
     echo "<li>$res</li>";
 }
