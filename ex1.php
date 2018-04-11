@@ -29,3 +29,12 @@ echo $xo[1][0] ;
 echo "<br/>";
 echo  $xo[1][1];
 echo 3%2;
+$el += 1;
+print $el;
+$k = 1;
+echo "<br/>";
+echo $k .= 4;
+for($m = 0; $m <= 10; ++$m) {
+    $res = $m%3;
+    echo "<li>$res</li>";
+}
