@@ -38,3 +38,11 @@ for($m = 1; !($m == 20) ; ++$m) {
     $res = $m;
     echo "<li>$res</li>";
 }
+for($m =1 ; $m < 20; ++$m) {
+    if (!($m % 2 == 0)) {
+        echo "finish";
+    } else {
+        $res = $m;
+        echo $res;
+    }
+}
