@@ -74,9 +74,22 @@ echo "developers, developers, developers
   is like measuring aircraft building by weight.
 - $author.";
 $author = "Vova";
-echo <<<_END
+echo <<<_EN
 Debugging is twice as hard as writing the code in the first place.
 Therefore, if you write the code as cleverly as possible, you are,
 by definition, not smart enough to debug it.
 - $author.
-_END;
+_EN;
+$text_2 = <<<_end
+Normal people believe if it ain't broke ,don't fix it.
+Engineers believe if it ain't broke , it does not have 
+enough features yet.
+
+- $author
+_end;
+echo "<br/>";
+echo $text_2;
+$number = 2313*2203;
+echo "<br/>";
+echo substr($number, 3, 1);
+
