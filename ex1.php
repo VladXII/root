@@ -64,3 +64,19 @@ echo "<br/>";
 echo $bullet .= $art;
 echo ' my spelling\'s';
 echo "date\tName\tPayment";
+$author = 'Vlad';
+echo "</br>";
+echo "developers, developers, developers
+      developers, developers!
+      
+- $author.";
+  $text = "Measuring programming progress by lines of cod
+  is like measuring aircraft building by weight.
+- $author.";
+$author = "Vova";
+echo <<<_END
+Debugging is twice as hard as writing the code in the first place.
+Therefore, if you write the code as cleverly as possible, you are,
+by definition, not smart enough to debug it.
+- $author.
+_END;
