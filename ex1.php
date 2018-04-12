@@ -38,11 +38,23 @@ for($m = 1; !($m == 20) ; ++$m) {
     $res = $m;
     echo "<li>$res</li>";
 }
-for($m =1 ; $m < 20; ++$m) {
-    if (!($m % 2 == 0)) {
-        echo "finish";
+for($m =1 ; $m <= 20 && !($m ==19); ++$m) {
+    if (!($m % 2 == 1)) {
+        echo "finish<br/>";
     } else {
         $res = $m;
-        echo $res;
+        echo "$res<br/>";
     }
 }
+/*$ammonia = "One";
+$breach = "two";
+$ingradient = $breach xor $breach;
+$ingradient = "$ammonia $breach";
+echo $ingradient;*/
+$y = 0;
+if ($y--==0) echo $y;
+$messages = 1;
+If ($messages == 1) $ms = "Повідомлення";
+else $ms = "Повідомлень";
+echo "<br/>";
+echo "У вас " . $messages . " $ms сер";
