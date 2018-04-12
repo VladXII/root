@@ -92,4 +92,29 @@ echo $text_2;
 $number = 2313*2203;
 echo "<br/>";
 echo substr($number, 3, 1);
+$pi = "3.1415927";
+$radius = 5;
+echo $pi * ($radius * $radius);
+define("ROOT_LOCATION", "http//:localhost:8000");
+echo ROOT_LOCATION;
+echo __LINE__;
+echo __FILE__;
+echo __DIR__;
+echo __FUNCTION__;
+echo __CLASS__;
+echo __NAMESPACE__;
+echo "Это строка" . __LINE__ . "в файле" . __FILE__;
+echo <<<_EN
+Debugging is twice as hard as writing the code in the first place.
+Therefore, if you write the code as cleverly as possible, you are,
+by definition, not smart enough to debug it.
+- $author.
+_EN;
+$b ? print "true" : print "false";
+function longdate($timestamp)
+{
+    return date("l F jS Y", $timestamp);
+}
+echo longdate(time());
+
 
