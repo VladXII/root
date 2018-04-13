@@ -9,7 +9,19 @@ $temp = " Дата : ";
 echo lorgdate($temp, time());
 function lorgdate($text, $timestamp)
 {
-return $text . date("l jS y", $timestamp);
+    return $text . date("l jS y", $timestamp);
 }
-global $is_logged_in;
-$is_logged_in ? print " U are authorized user\n" : print " U are guest\n";
+global $IS_LOGGED_IN;
+$IS_LOGGED_IN = true;
+$IS_LOGGED_IN ? print " U are authorized user\n" : print " U are guest\n";
+function test()
+{
+    static $count = 0;
+    echo $count;
+    $count++;
+}
+echo test();
+echo test();
+$came_from = $_SERVER['HTTP_REFERRER'];
+
+
