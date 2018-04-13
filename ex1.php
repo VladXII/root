@@ -116,5 +116,14 @@ function longdate($timestamp)
     return date("l F jS Y", $timestamp);
 }
 echo longdate(time());
+echo "<br/>";
+echo longdate(time() - 17 * 24 * 60 * 60);
+function longdate_1($timestamp)
+{
+    $temp = date("l F jS Y", $timestamp);
+    return "Дата : $temp";
+}
+echo longdate_1(time());
+
 
 
