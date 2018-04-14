@@ -23,5 +23,6 @@ function test()
 echo test();
 echo test();
 $came_from = $_SERVER['HTTP_REFERRER'];
+$came_from = htmlentities($_SERVER['HTTP_REFERRER']);
 
 
