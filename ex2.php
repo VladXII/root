@@ -118,6 +118,12 @@ switch ($page) {
 echo $fuel <= 1 ? "дозаправка необхідна" : "Топлива ще достатньо";
 $enough = $fuel <= 1 ? FALSE : TRUE;
 $saved = $saved >= $new ? $saved : $new;
+$fuel = 10;
+while ($fuel > 1) {
+    echo "Топлива ще достатньо";
+    if ($fuel) $fuel --;
+}
+echo "Пора заправлятись Шура!!!!";
 
 
 
