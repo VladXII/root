@@ -47,6 +47,19 @@ $b = "+1000";
 if ($a != $b) echo "1";
 if ($a !== $b) echo "2";
 $a = 2; $b = 3;
-if ($a > $b) echo "a більше б";
-if ($a < $b) echo "a менше б";
-if ($a = $b) echo "a рівне б";
+echo "<br>";
+if ($a > $b) echo "a більше б <br>";
+if ($a < $b) echo "a менше б <br>";
+if ($a == $b) echo "a рівне б <br>";
+$a = 1; $b = 1;
+echo ($a AND $b) . "<br>";
+echo ($a or $b) . "<br>";
+echo ($a XOR $b) . "<br>";
+echo !$a . "<br>";
+
+
+
+
+
+
+
