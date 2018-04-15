@@ -123,7 +123,6 @@ while ($fuel > 1) {
     echo "Топлива ще достатньо";
     echo $fuel;
     if ($fuel) $fuel--;
-}
 echo "Пора заправлятись Шура!!!!";
 $count = 1;
 while ($count <= 12) {
