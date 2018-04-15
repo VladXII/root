@@ -125,6 +125,18 @@ while ($fuel > 1) {
     if ($fuel) $fuel--;
 }
 echo "Пора заправлятись Шура!!!!";
-
-
+$count = 1;
+while ($count <= 12) {
+    echo "Число $count, помножене на  12, рівне " . $count * 12 . "<br>";
+    $count++;
+}
+$count = 0;
+while (++$count <= 12) {
+    echo "Число $count, помножене на  12, рівне " . $count * 12 . "<br>";
+}
+$count = 1;
+do {
+    echo "Число $count, умноженное на 12, равно " . $count * 12 . "<br>";
+    echo "<br>";
+}while (++$count <= 12);
 
