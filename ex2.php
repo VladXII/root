@@ -90,7 +90,28 @@ else {
         += 50;
     $bank_balance -= 50;
 }
-
+if     ($page == "Home") echo "Ви вибрали Home";
+elseif ($page == "About") echo "Ви вибрали About";
+elseif ($page == "News") echo "Ви вибрали News";
+elseif ($page == "Login") echo "Ви вибрали Login";
+elseif ($page == "Links") echo "Ви вибрали Links";
+switch ($page) {
+    case "Home":
+        echo "Ви вибрали Home";
+        break;
+    case "About":
+        echo "Ви вибрали About";
+        break;
+    case "News":
+        echo "Ви вибрали News";
+        break;
+    case "Login":
+        echo "Ви вибрали Login";
+        break;
+    case "Links":
+        echo "Ви вибрали Links";
+        break;
+}
 
 
 
