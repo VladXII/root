@@ -56,13 +56,23 @@ echo ($a AND $b) . "<br>";
 echo ($a or $b) . "<br>";
 echo ($a XOR $b) . "<br>";
 echo !$a . "<br>";
-if ($bank_balance < 100) {
+/*if ($bank_balance < 100) {
     $money
         = 1000;
     $bank_balance += $money;
 }
-
-
+*/
+if ($bank_balance < 100)
+{
+    $money
+        = 1000;
+    $bank_balance += $money;
+}
+else {
+    $savings
+        += 50;
+    $bank_balance -= 50;
+}
 
 
 
