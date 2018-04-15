@@ -136,7 +136,14 @@ while (++$count <= 12) {
 }
 $count = 1;
 do {
-    echo "Число $count, умноженное на 12, равно " . $count * 12 . "<br>";
+    echo "Число $count, помножене на 12, рівне " . $count * 12 . "<br>";
     echo "<br>";
 }while (++$count <= 12);
-
+for ($count = 1 ; $count <= 12 ; ++$count) {
+    echo "Число $count, помножене на 12, рівне " . $count * 12 . "<br>";
+    echo "<br>";
+}
+for ($i = 1, $j = 1 ; $i + $j < 10 ; $i++ , $j++)
+{
+// ...
+}
