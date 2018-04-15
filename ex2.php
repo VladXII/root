@@ -29,4 +29,20 @@ echo "a: [" . (20 > 9) . "]<br> ";
 echo "b: [" . (5 == 6) . "]<br> ";
 echo "c: [" . (1 == 0) . "]<br> ";
 echo "d: [" . (1 == 1) . "]<br> ";
-
+echo "a: [" . TRUE . "]<br> ";
+echo "b: [" . FALSE . "]<br> ";
+$day_number = 346;
+$days_to_new_year = 366 - $day_number;
+if ($days_to_new_year < 30) {
+    echo "Скоро Новый год!";
+}
+echo "<br>";
+$a = "1000";
+$b = "+1000";
+if ($a == $b) echo "1";
+if ($a === $b) echo "2";
+echo "<br>";
+$a = "1000";
+$b = "+1000";
+if ($a != $b) echo "1";
+if ($a !== $b) echo "2";
