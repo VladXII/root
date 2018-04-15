@@ -111,6 +111,9 @@ switch ($page) {
     case "Links":
         echo "Ви вибрали Links";
         break;
+    default:
+        echo "Сторінка не розпізнана";
+        break;
 }
 
 
