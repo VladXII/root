@@ -123,6 +123,7 @@ while ($fuel > 1) {
     echo "Топлива ще достатньо";
     echo $fuel;
     if ($fuel) $fuel--;
+}
 echo "Пора заправлятись Шура!!!!";
 $count = 1;
 while ($count <= 12) {
@@ -153,3 +154,9 @@ for ($j = 0 ; $j < 100 ; ++$j)
     if ($written == FALSE) break;
 }
 fclose($fp);
+$j = 10;
+    while ($j > -10) {
+        $j--;
+        if ($j == 0) continue;
+        echo (10 / $j) . "<br>";
+    }
