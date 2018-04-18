@@ -167,3 +167,5 @@ echo strtoupper("Hooray");// Перевід всіх символів в вер�
 echo "<br>";
 $lowered = strtolower("VoVA");
 echo $lowered;
+$ucfixed = ucfirst("люба к-сть");
+echo $ucfixed;
