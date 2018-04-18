@@ -160,3 +160,10 @@ $j = 10;
         if ($j == 0) continue;
         echo (10 / $j) . "<br>";
     }
+phpinfo();
+echo strrev(" .dlrow olleH");//Реверс строчки
+echo str_repeat("hip ", 2);//Повтор строчки
+echo strtoupper("Hooray");// Перевід всіх символів в верхній регістр
+echo "<br>";
+$lowered = strtolower("VoVA");
+echo $lowered;
