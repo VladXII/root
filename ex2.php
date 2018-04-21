@@ -166,6 +166,9 @@ echo str_repeat("hip ", 2);//Повтор строчки
 echo strtoupper("Hooray");// Перевід всіх символів в верхній регістр
 echo "<br>";
 $lowered = strtolower("VoVA");
-echo $lowered;
-$ucfixed = ucfirst("люба к-сть");
-echo $ucfixed;
+echo $lowered . "<br>";
+$ucfixed = ucfirst('люба к-сть');
+echo $ucfixed . "<br>";
+
+$a = [1, 2];
+var_export($a);
