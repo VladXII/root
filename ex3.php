@@ -74,7 +74,7 @@ else echo "not available\n";
 
 echo phpversion();
 echo "<br>";
-
+/*
 $object = New User;
 print_r($object);
 
@@ -87,4 +87,23 @@ class User
         echo "Мій код";
     }
 }
+*/
 
+$object = New User;
+print_r($object); echo "<br>";
+
+$object->name = "Alex";
+$object->password = "mentor";
+print_r($object); echo "<br>";
+
+$object->save_user();
+
+class User
+{
+    public $name, $password;
+
+    function save_user()
+    {
+        echo "Код який зберигає дані користувача";
+    }
+}
