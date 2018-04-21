@@ -60,3 +60,31 @@ function fix_names_4()
     global $c2; $c2 = ucfirst(strtolower($c2));
     global $c3; $c3 = ucfirst(strtolower($c3));
 }
+
+echo "<br>";
+/*include "ex1.php";
+include_once "ex1.php";
+include "ex1.php";
+require_once "index.php";
+require_once "index.php";*/
+
+echo "<br>";
+if (function_exists("array_combine")) echo "It's available\n";
+else echo "not available\n";
+
+echo phpversion();
+echo "<br>";
+
+$object = New User;
+print_r($object);
+
+class User
+{
+    public $name, $password;
+
+    function save_user()
+    {
+        echo "Мій код";
+    }
+}
+
