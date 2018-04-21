@@ -104,6 +104,32 @@ class User
 
     function save_user()
     {
-        echo "Код який зберигає дані користувача";
+        echo "Код який зберигає дані користувача";echo "<br>";
     }
+}
+
+/*$object1       = New User_1;
+$object1->name = "Vlad";
+$object2       = $object1;
+$object2->name = "Sanya";
+
+echo "object1 name = " . $object1->name . "<br>";
+echo "object2 name = " . $object2->name . "<br>";
+
+class User_1
+{
+    public $name;
+}
+*/
+$object1       = New User_1;
+$object1->name = "Vlad";
+$object2       = clone $object1;
+$object2->name = "Sanya";
+
+echo "object1 name = " . $object1->name . "<br>";
+echo "object2 name = " . $object2->name . "<br>";
+
+class User_1
+{
+ public $name;
 }
