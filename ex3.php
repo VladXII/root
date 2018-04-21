@@ -30,7 +30,7 @@ $n3 = ucfirst(strtolower($n3));
 return array($n1, $n2, $n3);
 }
 
-$b1 = "vlAD";
+$b1 = "vLAd";
 $b2 = "vLaD";
 $b3 = "PoberZniChENko";
 
@@ -43,4 +43,20 @@ function fix_names_3(&$n1, &$n2 , &$n3)
   $n1 = ucfirst(strtolower($n1));
   $n2 = ucfirst(strtolower($n2));
   $n3 = ucfirst(strtolower($n3));
+}
+
+$c1 = "mARiYa";
+$c2 = "sANya";
+$c3 = "mCGReGor";
+
+echo "<br>";
+echo $c1 . " " . $c2 . " " . $c3 . "<br>";
+fix_names_4();
+echo $c1 . " " . $c2 . " " . $c3;
+
+function fix_names_4()
+{
+    global $c1; $c1 = ucfirst(strtolower($c1));
+    global $c2; $c2 = ucfirst(strtolower($c2));
+    global $c3; $c3 = ucfirst(strtolower($c3));
 }
