@@ -229,3 +229,31 @@ class Son extends Dad
         parent::test();
     }
 }
+
+echo "<br>";
+$cat = new tiger();
+echo "У тигра є ...<br>";
+echo "Лахматий: " . $cat->fur . "<br>";
+echo "Полосатий: " . $cat->stripes;
+
+
+class wild_cat
+{
+    public $fur;// Коти лахматі тварини
+
+    function __construct()
+    {
+        $this->fur = "TRUE";
+    }
+}
+
+class tiger extends wild_cat
+{
+    public $stripes;// Тигри полосаті
+
+    function __construct()
+    {
+        parent::__construct();//Першочерговий виклик батьківського конструктора
+        $this->stripes = "TRUE";
+    }
+}
