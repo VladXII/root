@@ -133,3 +133,99 @@ class User_1
 {
  public $name;
 }
+
+Translate::lookup();
+class Translate
+{
+    const ENGLISH = 0;
+    const SPANISH = 1;
+    const FRENCH  = 2;
+    const GERMAN  = 3;
+
+    Static function lookup()
+    {
+        echo self::ENGLISH;
+    }
+}
+
+class Example
+{
+    var $name   = "Michael"; // Нерекомендована форма, аналогічна public
+    public $age = 23;// Відкрита властивість
+    protected $usercount;// Захищена властивість
+    private function admin() // Закритий метод
+    {
+        //код закритого методу адмін
+    }
+}
+
+$temp = new Test();
+echo "Test A: " . Test::$static_property . "<br>";
+echo "Test B: " . $temp->get_sp() . "<br>";
+echo "Test C: " . $temp->static_property . "<br>";
+class Test
+{
+    static $static_property = "Это статическое свойство";
+
+    function get_sp()
+    {
+        return self::$static_property;
+    }
+}
+
+echo "<br>";
+
+$object_I = new Subscriber();
+$object_I->name = "Vlad";
+$object_I->password = "QWERTY";
+$object_I->phone = "0956213666";
+$object_I->email = "http://WWW.Vovk.com.ua";
+$object_I->display();
+
+class User_4
+{
+    public $name, $password;
+
+    function save_user()
+    {
+        echo "Код зберігаючий дані користувача";
+    }
+}
+
+class Subscriber extends User_4
+{
+    public $phone, $email;
+
+    function display()
+    {
+        echo "Name : " . $this->name . "<br>";
+        echo "Password : " . $this->password ."<br>";
+        echo "Phone : " . $this->phone . "<br>";
+        echo "Email : " . $this->email . "<br>";
+    }
+}
+
+echo "<br>";
+$tipok = new Son;
+$tipok->test();
+$tipok->test2();
+
+class Dad
+{
+    function test()
+    {
+        echo "[Class Dad] Я твій батя Шура<br>";
+    }
+}
+
+class Son extends Dad
+{
+    function test()
+    {
+        echo "[Class Son] Я Шура<br>";
+    }
+    function test2()
+    {
+        parent::test();
+    }
+}
