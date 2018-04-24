@@ -257,3 +257,15 @@ class tiger extends wild_cat
         $this->stripes = "TRUE";
     }
 }
+
+echo "<br>";
+void::copyright();
+
+class void
+{
+    final function copyright()
+    {
+        echo "Цю шнагу створив Вован, маcтер кода";
+    }
+}
+
