@@ -259,11 +259,12 @@ class tiger extends wild_cat
 }
 
 echo "<br>";
+
 void::copyright();
 
 class void
 {
-    final function copyright()
+    static final function copyright()
     {
         echo "Цю шнягу створив Вован, маcтер кода";
     }

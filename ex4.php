@@ -147,7 +147,37 @@ $temp = "Hello";
 $address = "1 Old Street";
 $age = 61;
 
+echo "<br>";
+
 print_r(compact(explode(' ','j temp address age')));
 
+echo "<br>";
 
+printf("в вашій корзині %d покупки", 3);
 
+printf("Мене звати %s .Мені %d років.", 'Влад', 27);
+
+echo "<br>";
+
+echo "<pre>";
+printf("<span color='#%X%X%X'>Привет</span>", 65, 127, 245);
+printf("<span color='#%X%X%X'>Привет</span>", $r-20, $g-20, $b-20);
+echo "</pre>";
+
+printf("Результат: $%.2f", 123.42/12);
+
+printf("Результат : $%15f\n", 123.42 / 12);
+printf("Результат : $%'#15.2f\n", 123.42 / 12);
+
+$out = sprintf("Результат: $%.2f", 123.42 / 12);
+echo $out;
+
+$fh = fopen("testfile.txt", 'w') or die("Создать файл не удалось");
+$text = <<<_END
+Строка 1
+Строка 2
+Строка 3
+_END;
+fwrite($fh, $text) or die("Сбой записи файла");
+fclose($fh);
+echo "Файл 'testfile.txt' записан успешно ";
