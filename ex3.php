@@ -265,7 +265,7 @@ class void
 {
     final function copyright()
     {
-        echo "Цю шнагу створив Вован, маcтер кода";
+        echo "Цю шнягу створив Вован, маcтер кода";
     }
 }
 
