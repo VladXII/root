@@ -114,3 +114,40 @@ foreach ($chess_board as $row)
 
 echo "</pre>";
 
+echo $chess_board[7][1];
+
+echo is_array($chess_board) ? "Це массив" : "Це не массив";
+echo count($chess_board);
+echo "<br>" . count($chess_board, 1);
+rsort($chess_board, SORT_STRING);
+echo shuffle($chess_board) ? "yes" : "NO";
+
+foreach ($chess_board as $row) {
+    foreach ($row as $piece)
+        echo "$piece";
+    echo "<br>";
+}
+
+$temp = explode(' ', "Це речення з п'яти слів");
+print_r($temp);
+
+$temp = explode('***',"Це***речення***з***п'яти***слів");
+print_r($temp);
+
+$fname = "Doctor";
+$sname = "Who";
+$planet = "Gallifrey";
+$system = "Gridlock";
+$constellation = "Kasterborous";
+$contact = compact('fname', 'sname', 'planet', 'system', 'constellation');
+print_r($contact);
+
+$j = 23;
+$temp = "Hello";
+$address = "1 Old Street";
+$age = 61;
+
+print_r(compact(explode(' ','j temp address age')));
+
+
+
