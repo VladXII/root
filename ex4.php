@@ -181,3 +181,8 @@ _END;
 fwrite($fh, $text) or die("Сбой записи файла");
 fclose($fh);
 echo "Файл 'testfile.txt' записан успешно ";
+
+$fh = fopen("testfile.txt", 'r') or die("Файл не існує або у вас не має права доступу до нього");
+$line = fgets($fh);
+fclose($fh);
+echo "<br>" . $line;
